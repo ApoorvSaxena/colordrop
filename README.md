@@ -10,7 +10,7 @@ Color a website by dragging and dropping a color droplet from a palette.
 Installation
 -----
 
-[Download from Chrome WebStore](https://chrome.google.com/webstore/detail/colordrop-interactive-dra/gdoiopdelonmejbbcfoiibojafcpihhm)
+For Chrome Users: [Download from Chrome WebStore](https://chrome.google.com/webstore/detail/colordrop-interactive-dra/gdoiopdelonmejbbcfoiibojafcpihhm)
 
 Usage
 -----
