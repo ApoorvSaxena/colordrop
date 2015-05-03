@@ -1,0 +1,28 @@
+{
+  "name": "Colordrop: Interactive Drag & Drop Coloring",
+  "version": "0.0.1.5",
+  "manifest_version": 2,
+  "description": "Color a website by dragging and dropping a color droplet from a palette.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "19": "icons/icon19.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": "icons/icon16.png",
+    "default_title": "Colordrop"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "http://*/",
+    "https://*/"
+  ],
+  "background": {
+    "scripts": ["src/background/background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": ["images/drag.svg", "images/time.svg", "images/drop_reset.svg"]
+}
