@@ -10,6 +10,14 @@ Color a website by dragging and dropping a color droplet from a palette.
 Installation
 -----
 
+Bookmarklet(Cross Browser):
+
+Just add this into the URL section of a new bookmark:
+
+```
+javascript:(function(){var el=document.createElement('script');el.type='text/javascript';el.src='https://apoorvsaxena.github.io/colordrop/dist/production.min.js';el.onerror=function(){alert("Looks like the Content Security Policy directive is blocking the use of bookmarklets\n\nYou can copy and paste the content of:\n\n\"https://apoorvsaxena.github.io/colordrop/dist/production.min.js\"\n\ninto your console instead\n\n(link is in console already)");console.log("https://apoorvsaxena.github.io/colordrop/dist/production.min.js");};document.getElementsByTagName('body')[0].appendChild(el);})();
+```
+
 For Chrome Users: [Download from Chrome WebStore](https://chrome.google.com/webstore/detail/colordrop-interactive-dra/gdoiopdelonmejbbcfoiibojafcpihhm)
 
 Usage

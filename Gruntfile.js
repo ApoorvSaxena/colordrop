@@ -35,7 +35,7 @@ module.exports = function( grunt ) {
         dest: 'chrome-extension/src/inject/production.min.js',
       },
     },
-    clean: ["dist"]
+    clean: ["dist/tempCollect/", "dist/production.js"]
   });
 
 

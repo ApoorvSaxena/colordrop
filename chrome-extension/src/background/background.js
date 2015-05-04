@@ -19,7 +19,6 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   });
 
   executeScripts(null, [
-    { file: "src/inject/production.min.js", },
-    { code: "application.init();" }
+    { file: "src/inject/production.min.js", }
   ]);
 });
