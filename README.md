@@ -3,7 +3,7 @@ Colordrop
 *Interactive Drag and Drop Coloring Concept*
 ***
 
-[![Colordrop Interactive Drag and Drop Coloring](https://raw.githubusercontent.com/ApoorvSaxena/colordrop/master/images/coloring_concept.gif)](https://chrome.google.com/webstore/detail/colordrop-interactive-dra/gdoiopdelonmejbbcfoiibojafcpihhm)
+[![Colordrop Interactive Drag and Drop Coloring](https://raw.githubusercontent.com/ApoorvSaxena/colordrop/master/chrome-extension/images/coloring_concept.gif)](https://chrome.google.com/webstore/detail/colordrop-interactive-dra/gdoiopdelonmejbbcfoiibojafcpihhm)
 
 Color a website by dragging and dropping a color droplet from a palette.
 

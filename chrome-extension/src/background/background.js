@@ -17,12 +17,9 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   chrome.tabs.insertCSS(tab.id, {
     file: "src/inject/css/inject.css"
   });
+
   executeScripts(null, [
-    { file: "src/inject/js/lib/modernizr.custom.js", },
-    { file: "src/inject/js/lib/classie.js", },
-    { file: "src/inject/js/lib/interact-1.2.4.min.js", },
-    { file: "src/inject/js/main.js", },
-    { file: "src/inject/js/inject.js" },
+    { file: "src/inject/production.min.js", },
     { code: "application.init();" }
   ]);
 });

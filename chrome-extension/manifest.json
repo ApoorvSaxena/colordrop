@@ -21,8 +21,8 @@
     "https://*/"
   ],
   "background": {
-    "scripts": ["src/background/background.js"],
+    "scripts": ["src/background/background.min.js"],
     "persistent": false
   },
-  "web_accessible_resources": ["images/drag.svg", "images/time.svg", "images/drop_reset.svg"]
+  "web_accessible_resources": ["images/*"]
 }

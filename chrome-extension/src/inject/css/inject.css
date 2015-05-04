@@ -261,7 +261,7 @@
   margin: 0;
   color: transparent;
   font-size: 0px;
-  background: url('chrome-extension://__MSG_@@extension_id__/images/drop_reset.svg') no-repeat center center;
+  background: url("chrome-extension://gdoiopdelonmejbbcfoiibojafcpihhm/images/drop_reset.svg") no-repeat center center;
   background-size: 100%;
 }
 
