@@ -10,7 +10,7 @@ Color a website by dragging and dropping a color droplet from a palette.
 Installation
 -----
 
-Bookmarklet (works Cross Browser):
+#### Bookmarklet:
 
 Just add this into the URL section of a new bookmark:
 
@@ -18,7 +18,8 @@ Just add this into the URL section of a new bookmark:
 javascript:(function(){var el=document.createElement('script');el.type='text/javascript';el.src='https://rawgit.com/ApoorvSaxena/colordrop/master/dist/production.min.js';el.onerror=function(){alert("Looks like the Content Security Policy directive is blocking the use of bookmarklets\n\nYou can copy and paste the content of:\n\n\"https://rawgit.com/ApoorvSaxena/colordrop/master/dist/production.min.js\"\n\ninto your console instead\n\n(link is in console already)");console.log("https://rawgit.com/ApoorvSaxena/colordrop/master/dist/production.min.js");};document.getElementsByTagName('body')[0].appendChild(el);})();
 ```
 
-Chrome Extension: [Download from Chrome WebStore](https://chrome.google.com/webstore/detail/colordrop-interactive-dra/gdoiopdelonmejbbcfoiibojafcpihhm)
+#### Chrome Extension: [Download from Chrome WebStore](https://chrome.google.com/webstore/detail/colordrop-interactive-dra/gdoiopdelonmejbbcfoiibojafcpihhm)
+***
 
 Usage
 -----
@@ -26,6 +27,7 @@ Usage
 Drag a color from the color palette(Material Design specific) to a website and color designated areas of it (like sections or texts). One can drag a color from the color palette and drop it on any area that lights up with a blue outline, including text elements.
 
 Once the droplet that you are dragging gets dropped on a content area, a fun little Google Material like animation happens and the whole area gets filled with a colored circle.
+***
 
 Browser Support
 -----
@@ -33,12 +35,14 @@ Browser Support
 **Colordrop** works best on latest versions of Google Chrome.
 
 For all non-supported browsers, the extension does nothing and fallbacks to normal behavior without any explicit handling in your code.
+***
 
 License
 -----
 
 Copyright (c) 2015 Apoorv Saxena, http://apoorvsaxena.github.io
 Licensed under the [MIT license](http://opensource.org/licenses/MIT).
+***
 
 Credits
 -----
