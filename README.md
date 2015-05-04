@@ -12,6 +12,8 @@ Installation
 
 #### Chrome Extension: [Download from Chrome WebStore](https://chrome.google.com/webstore/detail/colordrop-interactive-dra/gdoiopdelonmejbbcfoiibojafcpihhm)
 
+or
+
 #### Bookmarklet:
 Just add this into the URL section of a new bookmark:
 
