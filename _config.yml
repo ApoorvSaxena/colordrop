@@ -1,0 +1,10 @@
+exclude:
+  - node_modules
+  - chrome-extension
+  - Gemfile
+  - Gemfile.lock
+  - Gruntfile.js
+  - README.md
+  - chrome-extension.zip
+  - dist
+  - package.json

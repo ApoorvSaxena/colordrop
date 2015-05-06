@@ -31,6 +31,8 @@ application.openTutorial = function() {
               '      </li> ' +
               '  </ul> ' +
               '</div>');
+  // reset colors
+  document.querySelector('button.reset-button').addEventListener('click', resetColors);
 
   if(chrome.extension) {
     chrome.storage.sync.get('colordrop-tutorial', function(storage) {
@@ -44,6 +46,12 @@ application.openTutorial = function() {
       }
     });
   }
+}
+
+function resetColors() {
+  [].slice.call(document.querySelectorAll('.paint-area')).forEach(function(el) {
+    el.style[classie.has(el, 'paint-area--text') ? 'color' : 'background-color'] = '';
+  });
 }
 
 application.init();

@@ -107,9 +107,6 @@
 				classie.remove(event.target, 'paint-area--highlight');
 			}
 		});
-
-		// reset colors
-		// document.querySelector('button.reset-button').addEventListener('click', resetColors);
 	}
 
 	function addPaintClasses() {
@@ -118,7 +115,7 @@
 	}
 
 	function processElements() {
-		var elements = document.querySelectorAll('body *');
+		var elements = document.querySelectorAll('body,body *');
 		for(var index in elements) {
 			if(elements[index].classList) {
 				classie.add(elements[index], "paint-area");
@@ -127,9 +124,12 @@
 	}
 
 	function processTextElements() {
-		var elements = document.querySelectorAll('p,a,span,h1,h2,h3,h4,h5,h6,em');
+		var elements = document.querySelectorAll('body *');
 		for(var index in elements) {
-			if(elements[index].classList) {
+			if(elements[index].classList &&
+			   (elements[index].children.length === 0) &&
+			   (elements[index].innerText.length > 0) &&
+			   !(elements[index].type)) {
 				classie.add(elements[index], "paint-area--text");
 			}
 		}
@@ -191,12 +191,6 @@
 				circle.addEventListener(transEndEventName, onEndTransCallbackFn);
 			}
 		}, 25);
-	}
-
-	function resetColors() {
-		[].slice.call(document.querySelectorAll('.paint-area')).forEach(function(el) {
-			el.style[classie.has(el, 'paint-area--text') ? 'color' : 'background-color'] = '';
-		});
 	}
 
 	init();
