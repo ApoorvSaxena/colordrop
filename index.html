@@ -30,12 +30,11 @@
       <h4>
         <a id="bookmarklet" class="anchor" href="index.html#bookmarklet" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bookmarklet:
       </h4>
-      <p>Drag and Drop this <b><a href="javascript:(function()%7B(function()%7Bvar%20el%3Ddocument.createElement('script')%3Bel.type%3D'text%2Fjavascript'%3Bel.src%3D'https%3A%2F%2Frawgit.com%2FApoorvSaxena%2Fcolordrop%2Fmaster%2Fdist%2Fproduction.min.js'%3Bel.onerror%3Dfunction()%7Balert(%22Looks%20like%20the%20Content%20Security%20Policy%20directive%20is%20blocking%20the%20use%20of%20bookmarklets%5Cn%5CnYou%20can%20copy%20and%20paste%20the%20content%20of%3A%5Cn%5Cn%5C%22https%3A%2F%2Frawgit.com%2FApoorvSaxena%2Fcolordrop%2Fmaster%2Fdist%2Fproduction.min.js%5C%22%5Cn%5Cninto%20your%20console%20instead%5Cn%5Cn(link%20is%20in%20console%20already)%22)%3Bconsole.log(%22https%3A%2F%2Frawgit.com%2FApoorvSaxena%2Fcolordrop%2Fmaster%2Fdist%2Fproduction.min.js%22)%3B%7D%3Bdocument.getElementsByTagName('body')%5B0%5D.appendChild(el)%3B%7D)()%7D)();">Colordrop</a></b> (Bookmarklet) into the Bookmarks bar</p>
-      <p>or</p>
-      <p>Just add this into the URL section of a new bookmark:</p>
-      <pre><code>javascript:(function()%7B(function()%7Bvar%20el%3Ddocument.createElement('script')%3Bel.type%3D'text%2Fjavascript'%3Bel.src%3D'https%3A%2F%2Frawgit.com%2FApoorvSaxena%2Fcolordrop%2Fmaster%2Fdist%2Fproduction.min.js'%3Bel.onerror%3Dfunction()%7Balert(%22Looks%20like%20the%20Content%20Security%20Policy%20directive%20is%20blocking%20the%20use%20of%20bookmarklets%5Cn%5CnYou%20can%20copy%20and%20paste%20the%20content%20of%3A%5Cn%5Cn%5C%22https%3A%2F%2Frawgit.com%2FApoorvSaxena%2Fcolordrop%2Fmaster%2Fdist%2Fproduction.min.js%5C%22%5Cn%5Cninto%20your%20console%20instead%5Cn%5Cn(link%20is%20in%20console%20already)%22)%3Bconsole.log(%22https%3A%2F%2Frawgit.com%2FApoorvSaxena%2Fcolordrop%2Fmaster%2Fdist%2Fproduction.min.js%22)%3B%7D%3Bdocument.getElementsByTagName('body')%5B0%5D.appendChild(el)%3B%7D)()%7D)();</code></pre>
-      <p>Mozilla has a <a href="https://support.mozilla.org/en-US/kb/bookmarklets-perform-common-web-page-tasks#w_how-do-i-install-a-bookmarklet">step by step description</a> on how to add a bookmarklet.</p>
-      <p>Or alternatifly just copy and paste the content of <a href="https://rawgit.com/ApoorvSaxena/colordrop/master/dist/production.min.js">production.min.js</a> to your browser console.</p>
+      <p>Drag the button below onto your bookmarks bar, then click it on any website to start coloring.</p>
+      <div class="center">
+        <a class="btn btn-demo" href="javascript:(function()%7B(function()%7Bvar%20el%3Ddocument.createElement('script')%3Bel.type%3D'text%2Fjavascript'%3Bel.src%3D'https%3A%2F%2Frawgit.com%2FApoorvSaxena%2Fcolordrop%2Fmaster%2Fdist%2Fproduction.min.js'%3Bel.onerror%3Dfunction()%7Balert(%22Looks%20like%20the%20Content%20Security%20Policy%20directive%20is%20blocking%20the%20use%20of%20bookmarklets%5Cn%5CnYou%20can%20copy%20and%20paste%20the%20content%20of%3A%5Cn%5Cn%5C%22https%3A%2F%2Frawgit.com%2FApoorvSaxena%2Fcolordrop%2Fmaster%2Fdist%2Fproduction.min.js%5C%22%5Cn%5Cninto%20your%20console%20instead%5Cn%5Cn(link%20is%20in%20console%20already)%22)%3Bconsole.log(%22https%3A%2F%2Frawgit.com%2FApoorvSaxena%2Fcolordrop%2Fmaster%2Fdist%2Fproduction.min.js%22)%3B%7D%3Bdocument.getElementsByTagName('body')%5B0%5D.appendChild(el)%3B%7D)()%7D)();">Colordrop</a>
+      </div>
+      <p>Or alternatively just copy and paste the content of <a href="https://rawgit.com/ApoorvSaxena/colordrop/master/dist/production.min.js">production.min.js</a> to your browser console.</p>
       <p><strong>You need to fall back to the browser extension or the copy and paste version for sites that block external scripts in their Content Security Policy directives.</strong></p>
       <hr>
       <h2>
@@ -43,6 +42,7 @@
       </h2>
       <p>Drag a color from the color palette(inspired by Material Design) to a website and color designated areas of it (like sections or texts). One can drag a color from the color palette and drop it on any area that lights up with a blue outline, including text elements.</p>
       <p>Once the droplet that you are dragging gets dropped on a content area, a fun little Google Material like animation happens and the whole area gets filled with a colored circle.</p>
+      <p><b>Works on Single Page Applications too.. ;)</b></p>
       <hr>
       <h2>
         <a id="browser-support" class="anchor" href="index.html#browser-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Browser Support

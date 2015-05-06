@@ -35,10 +35,19 @@ Drag a color from the color palette(inspired by Material Design) to a website an
 Once the droplet that you are dragging gets dropped on a content area, a fun little Google Material like animation happens and the whole area gets filled with a colored circle.
 ***
 
+Why Colordrop?
+-----
+
+Thinking about which color will suit best, Why wait? Try any color from ample option of colors available in the Color palette. I found it very useful when selecting a color combo in a live chat with peers.
+
+* Works on Single Page Applications as well. ;)
+
+***
+
 Browser Support
 -----
 
-**Colordrop** works best on latest browsers supporting transitions.
+**Colordrop** works best on latest browsers supporting CSS3 transitions.
 
 For all non-supported browsers, the extension does nothing and fallbacks to normal behavior without any explicit handling in your code.
 ***
