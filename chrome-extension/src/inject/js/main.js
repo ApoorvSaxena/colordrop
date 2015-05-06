@@ -124,13 +124,34 @@
 	}
 
 	function processTextElements() {
-		var elements = document.querySelectorAll('body *');
+		var nextNode,
+				currentElement,
+				elements = document.querySelectorAll('body *');
 		for(var index in elements) {
-			if(elements[index].classList &&
-			   (elements[index].children.length === 0) &&
-			   (elements[index].innerText.length > 0) &&
-			   !(elements[index].type)) {
-				classie.add(elements[index], "paint-area--text");
+			currentElement = elements[index];
+			nextNode = elements[index].nextSibling;
+			if(currentElement.classList &&
+			   (currentElement.children.length === 0) &&
+			   (currentElement.innerText) &&
+			   (currentElement.innerText.length > 0) &&
+			   !(currentElement.type)) {
+				classie.add(currentElement, "paint-area--text");
+			}
+			if (nextNode &&
+			    nextNode.nodeType == 3) {
+				if(nextNode.textContent.trim().length > 0) {
+					classie.add(currentElement, "paint-area--text");
+				}
+				else {
+					for(var childIndex in currentElement.childNodes) {
+						var childElement = currentElement.childNodes[childIndex];
+						if(childElement.wholeText &&
+						   childElement.wholeText.trim().length > 0) {
+							classie.add(currentElement, "paint-area--text");
+							break;
+						}
+					}
+				}
 			}
 		}
 	}
