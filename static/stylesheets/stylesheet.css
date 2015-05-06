@@ -13,6 +13,11 @@ body {
   text-align: center;
 }
 
+.top-left {
+  margin: 10px;
+  position: fixed;
+}
+
 a {
   color: #1e6bb8;
   text-decoration: none; }
