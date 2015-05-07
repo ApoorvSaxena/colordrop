@@ -18,6 +18,10 @@ body {
   position: fixed;
 }
 
+.plusone {
+  margin-top: 10px;
+}
+
 a {
   color: #1e6bb8;
   text-decoration: none; }
