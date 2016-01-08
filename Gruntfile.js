@@ -35,7 +35,13 @@ module.exports = function( grunt ) {
         dest: 'chrome-extension/src/inject/production.min.js',
       },
     },
-    clean: ["dist/tempCollect/", "dist/production.js"]
+    clean: ["dist/tempCollect/", "dist/production.js"],
+    watch: {
+      scripts: {
+        files: ['chrome-extension/**/*.js'],
+        tasks: ["inlineCssToJs", "concat"]
+      }
+    }
   });
 
 
